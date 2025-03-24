@@ -7,3 +7,12 @@ while (hello <= 2) {
     hello++
 }
 
+//Задание 2
+//Выведите в консоль цифры от 1 до 5.
+
+let number = 1;
+while (number <= 5) {
+    console.log(number);
+    number++
+}
+
