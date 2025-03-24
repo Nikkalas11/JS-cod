@@ -98,7 +98,7 @@ let month = {
     "сентябрь": 9,
     "октябрь": 10,
     "ноябрь": 11,
-    "декабрь":12
+    "декабрь": 12
 }
 for (let key in month) {
     console.log(`${key} имеет ${month[key]} порядковый номер в году`);
@@ -117,4 +117,43 @@ for (let key in book) {
     console.log(`${key}: ${book[key]}`)
 }
 
+//Задание 4
+//Создайте массив из 10 случайных чисел. Напишите код, который находит минимальное число в массиве и выводит его в консоль.
 
+
+// let randomNumbers = [];
+// for (let i = 0; i < 10; i++) {
+//     let randomNumber = Math.floor(Math.random() * 10);
+//     randomNumbers.push(randomNumber);
+// }
+// console.log(randomNumbers);
+// console.log(`${key}: ${randomNumbers[key]}`)
+
+let randomNumbers = {
+    1: 10,
+    2: 43,
+    3: 53,
+    4: 8,
+    5: 2,
+    6: 93,
+    7: 83,
+    8: 12,
+    9: -2,
+    10: 35
+}
+let min = randomNumbers[1];
+let Key = [1]
+console.log(min)
+console.log(Key)
+
+for (let maxn = Key; maxn <= 10; maxn++) {
+    if (min >= randomNumbers[Key]) {
+        min = randomNumbers[Key]
+        Key++
+
+        console.log(maxn)
+        console.log(min)
+    } else { 
+        console.log(maxn)
+        console.log(min) }
+}    
